@@ -7,7 +7,7 @@ def consolidate_cart(cart)
   cart.each do |item|
     if !output.has_key?(item.keys[0])
       output[item.keys[0]] = item.values[0]
-      output[]
+      output[:count] = 1
     binding.pry
     
     item
