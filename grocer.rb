@@ -9,7 +9,7 @@ def consolidate_cart(cart)
       output[item.keys[0]] = item.values[0]
           binding.pry
       output[item.keys[0][:count]] = 1
-
+    end
     
     item
   end
