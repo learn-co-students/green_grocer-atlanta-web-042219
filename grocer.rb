@@ -24,6 +24,7 @@ def apply_coupons(cart, coupons)
       binding.pry
       if item == coupon_item[:item] && data[:count] >= coupon_item[:num]
         output["#{item} W/COUPON"] = {price: coupon_item[:cost], clearance: data[:clearance], count: 1}
+        data[:count] -= 
       end
     end
   end
