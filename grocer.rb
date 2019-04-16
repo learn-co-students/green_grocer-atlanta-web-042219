@@ -8,7 +8,9 @@ def consolidate_cart(cart)
     if !output.has_key?(item.keys[0])
       output[item.keys[0]] = item.values[0]
           binding.pry
-      output[item.keys[0][:count]] = 1
+      output[item.keys[0]][:count] = 1
+    else
+      output[item.keys[0]][:count] += 1
     end
     
     item
