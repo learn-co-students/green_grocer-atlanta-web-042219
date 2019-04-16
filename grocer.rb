@@ -7,14 +7,12 @@ def consolidate_cart(cart)
   cart.each do |item|
     if !output.has_key?(item.keys[0])
       output[item.keys[0]] = item.values[0]
-          binding.pry
       output[item.keys[0]][:count] = 1
     else
       output[item.keys[0]][:count] += 1
     end
-    
-    item
   end
+  output
 end
 
 def apply_coupons(cart, coupons)
