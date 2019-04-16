@@ -26,6 +26,7 @@ def apply_coupons(cart, coupons)
         data[:count] -= coupon_item[:num]
       end
     end
+  end
   cart.each do |item, data|
     binding.pry
   
