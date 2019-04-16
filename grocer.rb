@@ -5,7 +5,9 @@ def consolidate_cart(cart)
   output = {}
   
   cart.each do |item|
-    
+    if !output.has_key?(item.keys[0])
+      output[item.keys[0]] => item.values
+      output[]
     binding.pry
     
     item
