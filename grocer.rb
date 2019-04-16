@@ -30,7 +30,7 @@ def apply_coupons(cart, coupons)
   cart.each do |item, data|
     binding.pry
     if data[:count] > 0
-      output
+      output[item] = 
   end
 
 end
