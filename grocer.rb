@@ -24,6 +24,7 @@ def apply_coupons(cart, coupons)
       if item == coupons_item[:item]
       binding.pry
       item
+      end
     end
   end
 
