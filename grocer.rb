@@ -32,7 +32,7 @@ def apply_coupons(cart, coupons)
     if data[:count] > 0
       output[item] = data
   end
-
+  output
 end
 
 def apply_clearance(cart)
