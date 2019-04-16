@@ -19,10 +19,9 @@ def apply_coupons(cart, coupons)
   # code here
   output = {}
   
-  coupons. each do |item, num, cost|
+  cart.each do |item, data, a, b|
     binding.pry
-    item
-  end
+
 end
 
 def apply_clearance(cart)
