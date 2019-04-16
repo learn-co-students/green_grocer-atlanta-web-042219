@@ -6,6 +6,8 @@ def consolidate_cart(cart)
   
   cart.each do |item|
     binding.pry
+    item
+  end
 end
 
 def apply_coupons(cart, coupons)
