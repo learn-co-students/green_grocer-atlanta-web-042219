@@ -23,7 +23,7 @@ def apply_coupons(cart, coupons)
     coupons.each do |coupon_item|
       binding.pry
       if item == coupon_item[:item] && data[:count] >= coupon_item[:num]
-        cart["#{item} W/COUPON"] = {price: coupon_item[:cost], clearance: 
+        cart["#{item} W/COUPON"] = {price: coupon_item[:cost], clearance: data[:clearance], count: 1}
       
       item
       end
