@@ -20,7 +20,6 @@ def apply_coupons(cart, coupons)
   output = {}
   
   cart.each do |item, data|
-    
     coupons.each do |coupon_item|
       if item == coupons_item[:item]
       binding.pry
