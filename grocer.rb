@@ -32,6 +32,7 @@ def apply_coupons(cart, coupons)
     if data[:count] > 0
       output[item] = data
     end
+  end
   output
 end
 
