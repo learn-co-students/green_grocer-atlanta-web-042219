@@ -29,7 +29,7 @@ def apply_coupons(cart, coupons)
   end
   cart.each do |item, data|
     binding.pry
-  
+    if data
   end
 
 end
