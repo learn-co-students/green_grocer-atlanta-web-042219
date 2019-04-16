@@ -31,7 +31,7 @@ def apply_coupons(cart, coupons)
     binding.pry
     if data[:count] > 0
       output[item] = data
-  end
+    end
   output
 end
 
