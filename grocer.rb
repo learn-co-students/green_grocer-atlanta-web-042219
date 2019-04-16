@@ -17,6 +17,12 @@ end
 
 def apply_coupons(cart, coupons)
   # code here
+  output = {}
+  
+  coupons. each do |item, num, cost|
+    binding.pry
+    item
+  end
 end
 
 def apply_clearance(cart)
